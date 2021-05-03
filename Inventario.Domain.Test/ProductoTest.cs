@@ -39,7 +39,7 @@ namespace Inventario.Domain.Test
             var producto = new ProductoSimple("123a", "lechuga", 2, 1000,1500 );
 
             var resultado = producto.RegistrarEntradaProducto(2);
-            Assert.AreEqual("La cantidad del producto lechuga es 4", resultado);
+            Assert.AreEqual("La nueva cantidad del producto lechuga es 4", resultado);
         }
         /* COMO USUARIO QUIERO REGISTRAR LA SALIDA PRODUCTOS
          CRITERIOS DE ACEPTACIÓN
@@ -67,7 +67,7 @@ namespace Inventario.Domain.Test
         {
             var producto = new ProductoSimple("123a", "lechuga", 4, 1000,1500 );
             var resultado = producto.RegistrarSalidaProducto(2);
-            Assert.AreEqual("La cantidad del producto lechuga es 2", resultado);
+            Assert.AreEqual("La nueva cantidad del producto lechuga es 2", resultado);
         }
         //producto compuesto
         /*  HU1.SALIDA DE PRODUCTO(3.5)
