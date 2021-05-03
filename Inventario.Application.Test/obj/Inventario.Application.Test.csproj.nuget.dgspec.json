@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DDP\\Inventario\\Inventario.Domain\\Inventario.Domain.csproj": {}
+    "C:\\DDP\\Inventario\\Inventario.Application.Test\\Inventario.Application.Test.csproj": {}
   },
   "projects": {
-    "C:\\DDP\\Inventario\\Inventario.Domain\\Inventario.Domain.csproj": {
+    "C:\\DDP\\Inventario\\Inventario.Application.Test\\Inventario.Application.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DDP\\Inventario\\Inventario.Domain\\Inventario.Domain.csproj",
-        "projectName": "Inventario.Domain",
-        "projectPath": "C:\\DDP\\Inventario\\Inventario.Domain\\Inventario.Domain.csproj",
+        "projectUniqueName": "C:\\DDP\\Inventario\\Inventario.Application.Test\\Inventario.Application.Test.csproj",
+        "projectName": "Inventario.Application.Test",
+        "projectPath": "C:\\DDP\\Inventario\\Inventario.Application.Test\\Inventario.Application.Test.csproj",
         "packagesPath": "C:\\Users\\JOHAN\\.nuget\\packages\\",
-        "outputPath": "C:\\DDP\\Inventario\\Inventario.Domain\\obj\\",
+        "outputPath": "C:\\DDP\\Inventario\\Inventario.Application.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

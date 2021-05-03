@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Inventario.Infrastructure.Data")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Inventario.Application.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Inventario.Infrastructure.Data")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Inventario.Infrastructure.Data")]
+[assembly: System.Reflection.AssemblyProductAttribute("Inventario.Application.Test")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Inventario.Application.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
