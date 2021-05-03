@@ -7,7 +7,6 @@ using NUnit.Framework;
 
 namespace Inventario.Application.Test
 {
-    [Ignore("Test no implementados")]
     public class Tests
     {
         private InventarioContext _dbContext;
@@ -36,7 +35,7 @@ namespace Inventario.Application.Test
         {
             var producto = new ProductoRequest("123a", "lechuga", 1, 2,1 );
             var resultado = _registrarEntadaProductoService.Handle(producto);
-            Assert.AreEqual("La cantidad del producto lechuga es 4", resultado);
+            Assert.AreEqual("Se registro la entrada del producto Lechuga con una cantidad de 1", resultado);
         }
     }
 }

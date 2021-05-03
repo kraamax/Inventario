@@ -1212,7 +1212,8 @@
       },
       "Inventario.Application/1.0.0": {
         "dependencies": {
-          "Inventario.Domain": "1.0.0"
+          "Inventario.Domain": "1.0.0",
+          "Inventario.Infrastructure.Data": "1.0.0"
         },
         "runtime": {
           "Inventario.Application.dll": {}
