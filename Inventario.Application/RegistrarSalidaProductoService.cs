@@ -66,7 +66,9 @@ namespace Inventario.Application
                 productosEnInventario.Add(auxProducto);
             }
             productoCompuesto.ProductosEnInventario = productosEnInventario;
-            productoCompuesto.RegistrarSalidaProducto(request.Cantidad);
+            var response=productoCompuesto.RegistrarSalidaProducto(request.Cantidad);
+            if (response.Contains("Error"))
+                return response;
             try
             {
                 foreach (var p in productoCompuesto.ProductosEnInventario)

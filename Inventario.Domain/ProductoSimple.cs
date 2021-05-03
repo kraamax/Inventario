@@ -29,7 +29,7 @@ namespace Inventario.Domain
             }
 
             if (cantidad > Cantidad)
-                return "Error: La cantidad de la salida no puede ser mayor a la disponible";
+                return $"Error {Nombre}: La cantidad de la salida no puede ser mayor a la disponible";
             Cantidad = Cantidad - cantidad;
             return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
         }

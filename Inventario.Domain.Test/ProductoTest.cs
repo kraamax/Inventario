@@ -23,7 +23,7 @@ namespace Inventario.Domain.Test
         {
             var producto = new ProductoSimple("123a", "lechuga", 1, 1000,1500 );
             var resultado = producto.RegistrarEntradaProducto(0);
-            Assert.AreEqual("La cantidad de la entrada de debe ser mayor a 0", resultado);
+            Assert.AreEqual("Error: La cantidad de la entrada de debe ser mayor a 0", resultado);
         }
         /*
          COMO USUARIO QUIERO REGISTRAR LA ENTRADA PRODUCTOS 
@@ -96,7 +96,8 @@ namespace Inventario.Domain.Test
             productosEnInventrario.Add(gaseosa);
             List<Producto> ensaladaConGaseosaComposicicion = new List<Producto>();
             ensaladaConGaseosaComposicicion.Add(ensalada);
-            ensaladaConGaseosaComposicicion.Add(gaseosa);
+            var gaseosa1 = new ProductoSimple("123c", "Gaseosa", 1, 1000, 1500);
+            ensaladaConGaseosaComposicicion.Add(gaseosa1);
             var ensaladaConGaseosaCombo = new ProductoCompuesto("123d", "EnsaladaConGaseosa", 1,4000 , ensaladaConGaseosaComposicicion, productosEnInventrario);
             //inventario.RegistrarSalidaProductoCompuesto(combo);
             var resultado = ensaladaConGaseosaCombo.RegistrarSalidaProducto(2);

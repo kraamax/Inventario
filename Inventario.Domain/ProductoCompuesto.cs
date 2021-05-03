@@ -77,13 +77,17 @@ namespace Inventario.Domain
 
         public override string RegistrarSalidaProducto(int cantidad)
         {
-            List<string> mensajes = new List<string>();
             foreach (var item in ProductosEnInventario)
             {
                 foreach (var ingrediente in Ingredientes)
                 {
-                    if(item.Codigo.Equals(ingrediente.Codigo))
-                        mensajes.Add(item.RegistrarSalidaProducto(ingrediente.Cantidad*cantidad));
+                    if (item.Codigo.Equals(ingrediente.Codigo))
+                    {
+                        var mensaje=item.RegistrarSalidaProducto(ingrediente.Cantidad*cantidad);
+                        if (mensaje.Contains("Error"))
+                            return mensaje;
+                    }
+
                 }
             }
             return $"Salida registrada {Nombre}, cantidad {cantidad} precio {Precio*cantidad}";

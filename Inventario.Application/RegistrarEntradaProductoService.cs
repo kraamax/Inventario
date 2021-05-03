@@ -33,8 +33,7 @@ namespace Inventario.Application
             }
             producto = TipoProducto.CrearProducto(request);
             response = producto.RegistrarEntradaProducto(request.Cantidad);
-            Console.WriteLine(response);
-            if (response.Equals("Error: La cantidad de la entrada de debe ser mayor a 0"))
+            if (response.Contains("Error"))
                 return response;
             try
             {
