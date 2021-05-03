@@ -57,3 +57,5 @@ C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebA
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\obj\Debug\net5.0\ref\Inventario.Infrastructure.WebApi.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\obj\Debug\net5.0\Inventario.Infrastructure.WebApi.pdb
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\obj\Debug\net5.0\Inventario.Infrastructure.WebApi.genruntimeconfig.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

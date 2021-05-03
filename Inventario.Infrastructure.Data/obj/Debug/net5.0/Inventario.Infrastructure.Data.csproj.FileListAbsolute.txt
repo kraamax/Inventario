@@ -13,3 +13,6 @@ C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\ref\Inventario.Infrastructure.Data.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\Inventario.Infrastructure.Data.runtimeconfig.json
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\Inventario.Infrastructure.Data.runtimeconfig.dev.json
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.genruntimeconfig.cache

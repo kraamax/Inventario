@@ -1,0 +1,12 @@
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\Inventario.Application.deps.json
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\Inventario.Application.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\ref\Inventario.Application.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\Inventario.Application.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.csprojAssemblyReference.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.AssemblyInfoInputs.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.AssemblyInfo.cs
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\ref\Inventario.Application.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.pdb

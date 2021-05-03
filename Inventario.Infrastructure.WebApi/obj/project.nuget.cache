@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "oBTf4xgnq8hL7m/fMgI4g2xzKXyj3c55TLcSnEM0xmnqx2BqKZXngZF3eaybLFuLsW4lLGhJL18/FtrigU/dlA==",
+  "dgSpecHash": "4wA1FZg3wOaqrdCN5kClfTuwwJRqXBFtLvW/Z88ZRiPqvMmC2FTSNI6WV68+LB5J+8jEuL2R52fpUkVq1IUU1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Infrastructure.WebApi\\Inventario.Infrastructure.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sebastian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.5\\microsoft.data.sqlite.core.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.5\\microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
+    "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.5\\microsoft.entityframeworkcore.design.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.5\\microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.5\\microsoft.entityframeworkcore.sqlite.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.5\\microsoft.entityframeworkcore.sqlite.core.5.0.5.nupkg.sha512",

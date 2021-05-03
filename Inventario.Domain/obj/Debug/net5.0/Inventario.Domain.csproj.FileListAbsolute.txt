@@ -9,3 +9,4 @@ C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\ne
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\net5.0\ref\Inventario.Domain.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.csprojAssemblyReference.cache
