@@ -12,6 +12,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Inventario.Domain.Contracts;
+using Inventario.Infrastructure.Data.Base;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inventario.Infrastructure.WebApi
@@ -32,6 +34,9 @@ namespace Inventario.Infrastructure.WebApi
 
             services.AddDbContext<InventarioContext>(opt => opt.UseSqlite(connectionString));
             services.AddControllers();
+            services.AddScoped<IUnitOfWork, UnitOfWork>(); //Crear Instancia por peticion
+            services.AddScoped<IProductoRepository, ProductoRepository>(); //Crear Instancia por peticion
+            services.AddScoped<IDbContext, InventarioContext>(); //Crear Instancia por peticion
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Inventario.Infrastructure.WebApi", Version = "v1" });
