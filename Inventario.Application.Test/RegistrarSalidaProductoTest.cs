@@ -13,6 +13,8 @@ namespace Inventario.Application.Test
     {
         private InventarioContext _dbContext;
         private RegistrarSalidaProductoService _registrarSalidaProductoService;
+        private RegistrarSalidaProductoService2 _registrarSalidaProductoService2;
+
         private IProductoRepository _productoRepository;
 
         [SetUp]
@@ -32,6 +34,10 @@ namespace Inventario.Application.Test
                 new UnitOfWork(_dbContext),
                 _productoRepository
             );
+            _registrarSalidaProductoService2 = new RegistrarSalidaProductoService2(
+                new UnitOfWork(_dbContext),
+                _productoRepository
+            );
         }
 
         [Test]
@@ -48,9 +54,10 @@ namespace Inventario.Application.Test
             _productoRepository.AddRange(ensalada.ProductosEnInventario);
             _productoRepository.Add(gaseosaInv);
             _dbContext.SaveChanges();
-            var request = new SalidaProductoRequest(ensaladaConG.Ingredientes,ensaladaConG.Codigo,1);
+            var request = new SalidaProductoRequest("Compuesto",ensaladaConG.Ingredientes,ensaladaConG.Codigo,1);
             var resultado = _registrarSalidaProductoService.Handle(request);
             Assert.AreEqual("se registro la salida", resultado);
         }
+        
     }
 }

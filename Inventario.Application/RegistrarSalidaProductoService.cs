@@ -26,32 +26,10 @@ namespace Inventario.Application
             var producto =_productoRepository.FindFirstOrDefault(p => p.Codigo == request.Codigo);
             if (producto == null)
                 return "No existe el producto";
-            if (request.Productos!=null)
+            if (request.Tipo=="Compuesto")
             {
-                var productoCompuesto = (ProductoCompuesto) producto;
-                var productosEnInventario = new List<Producto>();
-                foreach (var p in request.Productos)
-                {
-                    var auxProductos = _productoRepository.FindBy(c => c.Codigo == p.Codigo);
-                    var auxProducto =auxProductos.FirstOrDefault(x => x.ProductoCompuestoId == 0);
-                    productosEnInventario.Add(auxProducto);
-                }
-
-                productoCompuesto.ProductosEnInventario = productosEnInventario;
-                producto.RegistrarSalidaProducto(request.Cantidad);
-                try
-                {
-                    foreach (var p in productoCompuesto.ProductosEnInventario)
-                    {
-                        _productoRepository.Update(p);
-                    }
-                }
-                catch (Exception e)
-                {
-                    return "no se puede actualizar";
-                }
-                _unitOfWork.Commit();
-                return "se registro la salida";
+                
+                return RegistrarSalidaProductoCompuesto(request, producto);
             }
             
             var response = "";
@@ -68,7 +46,43 @@ namespace Inventario.Application
             _unitOfWork.Commit();
             return $"Se registro la salida del producto {producto.Nombre} con una cantidad de {producto.Cantidad}";
         }
+
+        private string RegistrarSalidaProductoCompuesto(SalidaProductoRequest request, Producto producto)
+        {
+            ProductoCompuesto productoCompuesto;
+            try
+            {
+                productoCompuesto = (ProductoCompuesto) producto;
+            }
+            catch (Exception e)
+            {
+                return "No es un producto Compuesto";
+            }
+            var productosEnInventario = new List<Producto>();
+            foreach (var p in request.Productos)
+            {
+                var auxProductos = _productoRepository.FindBy(c => c.Codigo == p.Codigo);
+                var auxProducto = auxProductos.FirstOrDefault(x => x.ProductoCompuestoId == 0);
+                productosEnInventario.Add(auxProducto);
+            }
+            productoCompuesto.ProductosEnInventario = productosEnInventario;
+            productoCompuesto.RegistrarSalidaProducto(request.Cantidad);
+            try
+            {
+                foreach (var p in productoCompuesto.ProductosEnInventario)
+                {
+                    _productoRepository.Update(p);
+                }
+            }
+            catch (Exception e)
+            {
+                return "no se puede actualizar";
+            }
+
+            _unitOfWork.Commit();
+            return "se registro la salida";
+        }
     }
 
-    public record SalidaProductoRequest(List<Producto> Productos,string Codigo, int Cantidad);
+    public record SalidaProductoRequest(string Tipo,List<Producto> Productos,string Codigo, int Cantidad);
 }
