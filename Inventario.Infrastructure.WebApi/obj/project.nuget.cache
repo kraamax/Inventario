@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xPRSmlXu09F3GX9DcNluqzlWtGzyzNEpVBftiULEIZw84p+C9+1OduBx8Os7GaKMudOq89e1LEDr9KFZ8Z+qhA==",
+  "dgSpecHash": "oBTf4xgnq8hL7m/fMgI4g2xzKXyj3c55TLcSnEM0xmnqx2BqKZXngZF3eaybLFuLsW4lLGhJL18/FtrigU/dlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Infrastructure.WebApi\\Inventario.Infrastructure.WebApi.csproj",
   "expectedPackageFiles": [

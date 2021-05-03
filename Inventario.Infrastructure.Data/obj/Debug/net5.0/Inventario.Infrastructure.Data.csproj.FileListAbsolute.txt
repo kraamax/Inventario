@@ -1,0 +1,15 @@
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\Inventario.Infrastructure.Data.deps.json
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\Inventario.Infrastructure.Data.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\ref\Inventario.Infrastructure.Data.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\Inventario.Infrastructure.Data.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\Inventario.Domain.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\bin\Debug\net5.0\Inventario.Domain.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.csproj.CopyComplete
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\ref\Inventario.Infrastructure.Data.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Data\obj\Debug\net5.0\Inventario.Infrastructure.Data.pdb
