@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HwFNZGDTafxZmk1nxyuIIFGx2u3vkbXBEeRkKiytv+dUsM1Uk2ov5xDNBGuVj4slypjNVlwe8GutJfui9+hK7g==",
+  "dgSpecHash": "nI0Vtw5y0HQHaSjf3kyXe14A+NwN6utJwQSrZZkudoRhTM9L9C3JqlvekteNcgWp3SpeJZVSIBCp/xRpyqkiOg==",
   "success": true,
-  "projectFilePath": "C:\\DDP\\Inventario\\Inventario.Application\\Inventario.Application.csproj",
+  "projectFilePath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Application\\Inventario.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
