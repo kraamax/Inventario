@@ -25,18 +25,27 @@ namespace Inventario.Application
             var producto =_productoRepository.FindFirstOrDefault(p => p.Codigo == request.Codigo);
             var response = "";
             if (producto != null)
-                return producto.RegistrarEntradaProducto(request.Cantidad);
+            {
+                response= producto.RegistrarEntradaProducto(request.Cantidad);
+                _productoRepository.Update(producto);
+                _unitOfWork.Commit();
+                return response;
+            }
             producto = TipoProducto.CrearProducto(request);
+            response = producto.RegistrarEntradaProducto(request.Cantidad);
+            if (response.Equals("La cantidad de la entrada de debe ser mayor a 0"))
+                return response;
             try
             {
                 _productoRepository.Add(producto);
+                response= $"Se registro la entrada del producto {producto.Nombre} con una cantidad de {producto.Cantidad}";
             }
             catch (Exception e)
             {
                 return "no se pudo guardar";
             }
             _unitOfWork.Commit();
-            return $"Se registro la entrada del producto {producto.Nombre} con una cantidad de {producto.Cantidad}";
+            return response;
         }
     }
 
@@ -47,8 +56,8 @@ namespace Inventario.Application
         public static Producto CrearProducto(EntradaProductoRequest request)
         {
             if (request.Productos == null)
-                return new ProductoSimple(request.Codigo,request.Nombre,request.Cantidad,request.Costo,request.Precio);
-            return new ProductoCompuesto(request.Codigo, request.Nombre, request.Cantidad, 
+                return new ProductoSimple(request.Codigo,request.Nombre,0,request.Costo,request.Precio);
+            return new ProductoCompuesto(request.Codigo, request.Nombre, 0, 
                 request.Precio, request.Productos,null);
         }
     }

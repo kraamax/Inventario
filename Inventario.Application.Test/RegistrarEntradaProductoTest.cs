@@ -48,6 +48,14 @@ namespace Inventario.Application.Test
             Assert.AreEqual("Se registro la entrada del producto Lechuga con una cantidad de 1", resultado);
         }
         [Test]
+        public void NoPuedoRegistrarEntradaDeUnProductoNuevoConCantidad0()
+        {
+            var producto = new EntradaProductoRequest(null,"123a", "Lechuga", 0, 2,1 );
+            var resultado = _registrarEntadaProductoService.Handle(producto);
+            Assert.AreEqual("La cantidad de la entrada de debe ser mayor a 0", resultado);
+        }
+
+        [Test]
         public void PuedoRegistrarEntradaDeUnProductoExistente()
         {
             var producto = new EntradaProductoRequest(null,"123a", "Lechuga", 1, 2,1 );

@@ -11,6 +11,7 @@
           "Inventario.Application": "1.0.0",
           "Inventario.Domain": "1.0.0",
           "Inventario.Infrastructure.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "5.0.5",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "Moq": "4.16.1",
           "NUnit": "3.12.0",
@@ -132,6 +133,17 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/5.0.5": {},
+      "Microsoft.EntityFrameworkCore.InMemory/5.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.5"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "5.0.5.0",
+            "fileVersion": "5.0.521.16102"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.5",
@@ -1304,6 +1316,13 @@
       "sha512": "sha512-czVyD5h0etXlrFHln0GPwlhmNm4yFe8vA/xfW/oN26OT8AAWkA6YPjr+z68/kmPqMWFo8UHxvDBZ9g2TiJY9qQ==",
       "path": "microsoft.entityframeworkcore.analyzers/5.0.5",
       "hashPath": "microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/5.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hJMrS3eI01HGx1zaTr8KSRB5yK+RkCammBGvQ7uKDjtuhqjA0iF8aBg0cGVDzSvN3Eh37ydc1ZH5JbblBcBs+g==",
+      "path": "microsoft.entityframeworkcore.inmemory/5.0.5",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.5.0.5.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.5": {
       "type": "package",

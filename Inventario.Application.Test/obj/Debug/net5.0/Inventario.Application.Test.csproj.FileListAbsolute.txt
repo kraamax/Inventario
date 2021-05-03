@@ -139,3 +139,4 @@ C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application.Test\bi
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application.Test\bin\Debug\net5.0\Inventario.Application.pdb
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application.Test\bin\Debug\net5.0\Inventario.Domain.pdb
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application.Test\bin\Debug\net5.0\Inventario.Infrastructure.Data.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application.Test\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll

@@ -11,7 +11,7 @@ namespace Inventario.Domain
         {
             Costo = costo;
         }
-
+        
         public override string RegistrarEntradaProducto(int cantidad)
         {
             if (cantidad <= 0) {
