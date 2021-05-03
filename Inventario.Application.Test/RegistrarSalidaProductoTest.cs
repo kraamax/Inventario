@@ -41,7 +41,7 @@ namespace Inventario.Application.Test
         }
 
         [Test]
-        public void PuedoRegistrarLaSalidaDeProducto()
+        public void PuedoRegistrarLaSalidaDeProductoCompuesto()
         {
             var ensalada=ProductoCompuestoMother.CrearProducto();
             var gaseosa = new ProductoSimple("sadad", "gaseosa", 1, 100, 200);
@@ -54,10 +54,29 @@ namespace Inventario.Application.Test
             _productoRepository.AddRange(ensalada.ProductosEnInventario);
             _productoRepository.Add(gaseosaInv);
             _dbContext.SaveChanges();
-            var request = new SalidaProductoRequest("Compuesto",ensaladaConG.Ingredientes,ensaladaConG.Codigo,1);
+            var request = new SalidaProductoRequest("Compuesto",ensaladaConG.Codigo,1);
             var resultado = _registrarSalidaProductoService.Handle(request);
-            Assert.AreEqual("se registro la salida", resultado);
+            Assert.AreEqual("se registro la salida de 1 ensaladaconG", resultado);
         }
-        
+        [Test]
+        public void PuedoRegistrarLaSalidaDeProductoSimple()
+        {
+            var gaseosaInv=new ProductoSimple("sadad", "gaseosa", 5, 100, 200);
+            _productoRepository.Add(gaseosaInv);
+            _dbContext.SaveChanges();
+            var request = new SalidaProductoRequest("Simple",gaseosaInv.Codigo,1);
+            var resultado = _registrarSalidaProductoService.Handle(request);
+            Assert.AreEqual("La nueva cantidad del producto gaseosa es 4", resultado);
+        }
+        [Test]
+        public void NoPuedoRegistrarLaSalidaDeProductoSimpleSiLaCantidadExcedeLaDisponible()
+        {
+            var gaseosaInv=new ProductoSimple("sadad", "gaseosa", 5, 100, 200);
+            _productoRepository.Add(gaseosaInv);
+            _dbContext.SaveChanges();
+            var request = new SalidaProductoRequest("Simple",gaseosaInv.Codigo,6);
+            var resultado = _registrarSalidaProductoService.Handle(request);
+            Assert.AreEqual("La cantidad de la salida no puede ser mayor a la disponible", resultado);
+        }
     }
 }

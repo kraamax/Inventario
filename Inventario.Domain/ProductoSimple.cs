@@ -27,6 +27,9 @@ namespace Inventario.Domain
             {
                 return "La cantidad de la salida de debe ser mayor a 0";
             }
+
+            if (cantidad > Cantidad)
+                return "La cantidad de la salida no puede ser mayor a la disponible";
             Cantidad = Cantidad - cantidad;
             return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
         }

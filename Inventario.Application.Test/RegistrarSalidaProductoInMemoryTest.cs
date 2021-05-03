@@ -54,9 +54,9 @@ namespace Inventario.Application.Test
             _productoRepository.AddRange(ensalada.ProductosEnInventario);
             _productoRepository.Add(gaseosaInv);
             _dbContext.SaveChanges();
-            var request = new SalidaProductoRequest("Compuesto",ensaladaConG.Ingredientes,ensaladaConG.Codigo,1);
+            var request = new SalidaProductoRequest("Compuesto",ensaladaConG.Codigo,1);
             var resultado = _registrarSalidaProductoService.Handle(request);
-            Assert.AreEqual("se registro la salida", resultado);
+            Assert.AreEqual("se registro la salida de 1 ensaladaconG", resultado);
         }
         
     }

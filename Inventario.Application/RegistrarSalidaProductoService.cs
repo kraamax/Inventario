@@ -44,7 +44,7 @@ namespace Inventario.Application
                 return "no se pudo guardar";
             }
             _unitOfWork.Commit();
-            return $"Se registro la salida del producto {producto.Nombre} con una cantidad de {producto.Cantidad}";
+            return response;
         }
 
         private string RegistrarSalidaProductoCompuesto(SalidaProductoRequest request, Producto producto)
@@ -59,7 +59,7 @@ namespace Inventario.Application
                 return "No es un producto Compuesto";
             }
             var productosEnInventario = new List<Producto>();
-            foreach (var p in request.Productos)
+            foreach (var p in productoCompuesto.Ingredientes)
             {
                 var auxProductos = _productoRepository.FindBy(c => c.Codigo == p.Codigo);
                 var auxProducto = auxProductos.FirstOrDefault(x => x.ProductoCompuestoId == 0);
@@ -80,9 +80,9 @@ namespace Inventario.Application
             }
 
             _unitOfWork.Commit();
-            return "se registro la salida";
+            return $"se registro la salida de {productoCompuesto.Cantidad} {productoCompuesto.Nombre}";
         }
     }
 
-    public record SalidaProductoRequest(string Tipo,List<Producto> Productos,string Codigo, int Cantidad);
+    public record SalidaProductoRequest(string Tipo,string Codigo, int Cantidad);
 }

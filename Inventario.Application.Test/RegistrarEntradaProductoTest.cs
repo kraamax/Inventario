@@ -63,23 +63,7 @@ namespace Inventario.Application.Test
             var resultado = _registrarEntadaProductoService.Handle(producto);
             Assert.AreEqual("La nueva cantidad del producto Lechuga es 2", resultado);
         }
-        [Test]
-        public void PuedoRegistrarLaSalidaDeProducto()
-        {
-            var ensalada=ProductoCompuestoMother.CrearProducto();
-            var gaseosa = new ProductoSimple("sadad", "gaseosa", 1, 100, 200);
-            var gaseosaInv=new ProductoSimple("sadad", "gaseosa", 5, 100, 200);
-            var ing = new List<Producto>();
-            ing.Add(ensalada);
-            ing.Add(gaseosa);
-            var ensaladaConG = new ProductoCompuesto("dasd", "ensaladaconG", 1, 2, ing, ensalada.ProductosEnInventario);
-            _productoRepository.Add(ensaladaConG);
-            _productoRepository.AddRange(ensalada.ProductosEnInventario);
-            _productoRepository.Add(gaseosaInv);
-            _dbContext.SaveChanges();
-            var request = new SalidaProductoRequest("Compuesto",ensaladaConG.Ingredientes,ensaladaConG.Codigo,1);
-            var resultado = _registrarSalidaProductoService.Handle(request);
-            Assert.AreEqual("se registro la salida", resultado);
-        }
+       
+       
     }
 }
