@@ -53,7 +53,7 @@ namespace Inventario.Domain.Test
         {
             var producto = new ProductoSimple("123a", "lechuga", 1, 1000,1500 );
             var resultado = producto.RegistrarSalidaProducto(0);
-            Assert.AreEqual("La cantidad de la salida de debe ser mayor a 0", resultado);
+            Assert.AreEqual("Error: La cantidad de la salida de debe ser mayor a 0", resultado);
         }
         /* COMO USUARIO QUIERO REGISTRAR LA SALIDA PRODUCTOS
          CRITERIOS DE ACEPTACIÓN
@@ -84,9 +84,9 @@ namespace Inventario.Domain.Test
         public void TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto()
         {
             List<Producto> IngredientesEnsalada = new List<Producto>();
-            var tomate = new ProductoSimple("123a", "tomate", 1, 1300,1500 );
-            var lechuga = new ProductoSimple("123b", "lechuga", 1, 1000, 1500);
-            var gaseosa = new ProductoSimple("123c", "Gaseosa", 1, 1000, 1500);
+            var tomate = new ProductoSimple("123a", "tomate", 2, 1300,1500 );
+            var lechuga = new ProductoSimple("123b", "lechuga", 2, 1000, 1500);
+            var gaseosa = new ProductoSimple("123c", "Gaseosa", 2, 1000, 1500);
             var productosEnInventrario = new List<Producto>();
             productosEnInventrario.Add(tomate);
             productosEnInventrario.Add(lechuga);

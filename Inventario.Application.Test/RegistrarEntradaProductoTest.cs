@@ -52,7 +52,7 @@ namespace Inventario.Application.Test
         {
             var producto = new EntradaProductoRequest(null,"123a", "Lechuga", 0, 2,1 );
             var resultado = _registrarEntadaProductoService.Handle(producto);
-            Assert.AreEqual("La cantidad de la entrada de debe ser mayor a 0", resultado);
+            Assert.AreEqual("Error: La cantidad de la entrada de debe ser mayor a 0", resultado);
         }
 
         [Test]

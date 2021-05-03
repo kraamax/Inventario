@@ -76,7 +76,7 @@ namespace Inventario.Application.Test
             _dbContext.SaveChanges();
             var request = new SalidaProductoRequest("Simple",gaseosaInv.Codigo,6);
             var resultado = _registrarSalidaProductoService.Handle(request);
-            Assert.AreEqual("La cantidad de la salida no puede ser mayor a la disponible", resultado);
+            Assert.AreEqual("Error: La cantidad de la salida no puede ser mayor a la disponible", resultado);
         }
     }
 }

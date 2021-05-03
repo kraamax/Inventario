@@ -15,7 +15,7 @@ namespace Inventario.Domain
         public override string RegistrarEntradaProducto(int cantidad)
         {
             if (cantidad <= 0) {
-                return "La cantidad de la entrada de debe ser mayor a 0";
+                return "Error: La cantidad de la entrada de debe ser mayor a 0";
             }
             Cantidad = Cantidad + cantidad;
             return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
@@ -25,11 +25,11 @@ namespace Inventario.Domain
         {
             if (cantidad <= 0)
             {
-                return "La cantidad de la salida de debe ser mayor a 0";
+                return "Error: La cantidad de la salida de debe ser mayor a 0";
             }
 
             if (cantidad > Cantidad)
-                return "La cantidad de la salida no puede ser mayor a la disponible";
+                return "Error: La cantidad de la salida no puede ser mayor a la disponible";
             Cantidad = Cantidad - cantidad;
             return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
         }
