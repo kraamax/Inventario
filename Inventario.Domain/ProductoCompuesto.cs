@@ -8,23 +8,28 @@ namespace Inventario.Domain
     public class ProductoCompuesto : Producto
     {
 
-        public List<Producto> Productos { get; private set; }
+        public List<Producto> Ingredientes { get; private set; }
+        public List<Producto> ProductosEnInventario { get;  set; }
 
         public ProductoCompuesto(string codigo, string nombre, int cantidad, decimal precio) : base(codigo, nombre, cantidad, precio)
         {
         }
-        public ProductoCompuesto(string codigo, string nombre, int cantidad,  decimal precio, List<Producto> productos) : base(codigo, nombre, cantidad,  precio)
+
+     
+
+        public ProductoCompuesto(string codigo, string nombre, int cantidad,  decimal precio, List<Producto> ingredientes, List<Producto> productosEnInventario) : base(codigo, nombre, cantidad,  precio)
         {
-            Productos = productos;
+            Ingredientes = ingredientes;
+            ProductosEnInventario = productosEnInventario;
             Costo = CalcularCosto();
         }
 
         public List<ProductoSimple> Descomponer()
         {
             List<ProductoSimple> pSimple = new List<ProductoSimple>();
-            foreach (var item in Productos)
+            foreach (var item in Ingredientes)
             {
-                if (item.GetType().Equals(typeof(ProductoCompuesto)))
+                if (item.GetType() == typeof(ProductoCompuesto))
                 {
                     var newItem = (ProductoCompuesto)item;
                     foreach (var p in newItem.Descomponer())
@@ -42,14 +47,13 @@ namespace Inventario.Domain
         public decimal CalcularCosto()
         {
             decimal costo = 0;
-            foreach (var item in Productos)
+            foreach (var item in Ingredientes)
             {
                 if (item.GetType().Equals(typeof(ProductoCompuesto)))
                 {
                     var newItem = (ProductoCompuesto)item;
                     foreach (var p in newItem.Descomponer())
                     {
-                        Console.WriteLine(p.Costo);
                         costo = costo +(p.Costo*p.Cantidad);
                     }
                     Console.WriteLine(Costo);
@@ -65,18 +69,21 @@ namespace Inventario.Domain
 
         public override string RegistrarEntradaProducto(int cantidad)
         {
-             if (cantidad <= 0) {
-                return "La cantidad de la entrada de debe ser mayor a 0";
-            }
-            Cantidad = Cantidad + cantidad;
+             if (cantidad <= 0)
+                 return "La cantidad de la entrada de debe ser mayor a 0";
+             Cantidad = Cantidad + cantidad;
             return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
         }
 
         public override string RegistrarSalidaProducto(int cantidad)
         {
-            foreach (var item in Productos)
+            foreach (var item in ProductosEnInventario)
             {
-                    item.RegistrarSalidaProducto(cantidad);
+                foreach (var ingrediente in Ingredientes)
+                {
+                    if(item.Codigo.Equals(ingrediente.Codigo))
+                        item.RegistrarSalidaProducto(ingrediente.Cantidad*cantidad);
+                }
             }
             return $"Salida registrada {Nombre}, cantidad {cantidad} precio {Precio*cantidad}";
         }

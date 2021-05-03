@@ -9,21 +9,18 @@ namespace Inventario.Application
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IProductoRepository _productoRepository;
-        private readonly IMailServer _emailServer;
 
         public RegistrarEntradaProductoService(
             IUnitOfWork unitOfWork,
-            IProductoRepository productoRepository,
-            IMailServer emailServer
+            IProductoRepository productoRepository
         )
         {
             _unitOfWork = unitOfWork;
             _productoRepository = productoRepository;
-            _emailServer = emailServer;
 
         }
 
-        public string Handle(ProductoRequest request)
+        public string Handle(EntradaProductoRequest request)
         {
             var producto =_productoRepository.FindFirstOrDefault(p => p.Codigo == request.Codigo);
             var response = "";
@@ -43,16 +40,16 @@ namespace Inventario.Application
         }
     }
 
-    public record ProductoRequest(List<Producto> Productos,string Codigo, string Nombre, int Cantidad, decimal Costo, decimal Precio);
+    public record EntradaProductoRequest(List<Producto> Productos,string Codigo, string Nombre, int Cantidad, decimal Costo, decimal Precio);
 
     public class TipoProducto
     {
-        public static Producto CrearProducto(ProductoRequest request)
+        public static Producto CrearProducto(EntradaProductoRequest request)
         {
             if (request.Productos == null)
                 return new ProductoSimple(request.Codigo,request.Nombre,request.Cantidad,request.Costo,request.Precio);
             return new ProductoCompuesto(request.Codigo, request.Nombre, request.Cantidad, 
-                request.Precio, request.Productos);
+                request.Precio, request.Productos,null);
         }
     }
 }

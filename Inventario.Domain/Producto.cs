@@ -18,6 +18,7 @@ namespace Inventario.Domain
         public int Cantidad { get; protected set; }
         public decimal Costo { get; protected set; }
         public decimal Precio { get; protected set; }
+        public int ProductoCompuestoId { get;}
         public abstract string RegistrarEntradaProducto(int cantidad);
         public abstract string RegistrarSalidaProducto(int cantidad);
 
