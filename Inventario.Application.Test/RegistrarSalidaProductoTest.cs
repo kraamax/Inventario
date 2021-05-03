@@ -78,5 +78,19 @@ namespace Inventario.Application.Test
             var resultado = _registrarSalidaProductoService.Handle(request);
             Assert.AreEqual("Error gaseosa: La cantidad de la salida no puede ser mayor a la disponible", resultado);
         }
+
+        [Test]
+        public void NoPuedoRegistrarLaSalidaDeProductoCompuestoSiNoHayProductosParaHacerlo()
+        {
+            var ensalada = ProductoCompuestoMother.CrearProducto();
+            _productoRepository.Add(ensalada);
+            _productoRepository.AddRange(ensalada.ProductosEnInventario);
+            _dbContext.SaveChanges();
+            var request = new SalidaProductoRequest("Simple",ensalada.Codigo,6);
+            var resultado = _registrarSalidaProductoService.Handle(request);
+            Assert.AreEqual("Error tomate: La cantidad de la salida no puede ser mayor a la disponible", resultado);
+
+        }
+        
     }
 }

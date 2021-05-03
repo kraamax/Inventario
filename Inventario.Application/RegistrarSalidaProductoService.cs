@@ -33,7 +33,6 @@ namespace Inventario.Application
             }
             
             var response = "";
-            
             response = producto.RegistrarSalidaProducto(request.Cantidad);
             try
             {
