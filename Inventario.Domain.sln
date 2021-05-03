@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Domain", "Inventario.Domain\Inventario.Domain.csproj", "{06114F5A-7499-4C28-8A7C-9084B7CADF3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Domain.Test", "Inventario.Domain.Test\Inventario.Domain.Test.csproj", "{78C4F909-977A-47E1-85CB-A07E7B0549CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06114F5A-7499-4C28-8A7C-9084B7CADF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06114F5A-7499-4C28-8A7C-9084B7CADF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06114F5A-7499-4C28-8A7C-9084B7CADF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06114F5A-7499-4C28-8A7C-9084B7CADF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C4F909-977A-47E1-85CB-A07E7B0549CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C4F909-977A-47E1-85CB-A07E7B0549CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C4F909-977A-47E1-85CB-A07E7B0549CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C4F909-977A-47E1-85CB-A07E7B0549CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {495B66DC-150E-4DC7-8344-4BF1AEB7A016}
+	EndGlobalSection
+EndGlobal
