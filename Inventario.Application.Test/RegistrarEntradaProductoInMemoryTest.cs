@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Inventario.Application.Test.Dobles;
 using Inventario.Domain;
 using Inventario.Domain.Contracts;
 using Inventario.Infrastructure.Data;
@@ -9,17 +10,18 @@ using NUnit.Framework;
 
 namespace Inventario.Application.Test
 {
-    public class RegistrarEntradaProductoTest
+    public class RegistrarEntradaProductoInMemoryTest
     {
         private InventarioContext _dbContext;
         private RegistrarEntradaProductoService _registrarEntadaProductoService;
+
         private IProductoRepository _productoRepository;
 
         [SetUp]
         public void Setup()
         {
             var optionsSqlite = new DbContextOptionsBuilder<InventarioContext>()
-                .UseSqlite(@"Data Source=C:\\sqlite\\InventarioDBTest.db")
+                .UseSqlite(SqlLiteDatabaseInMemory.CreateConnection())
                 .Options;
 
             _dbContext = new InventarioContext(optionsSqlite);
@@ -32,7 +34,7 @@ namespace Inventario.Application.Test
                 new UnitOfWork(_dbContext),
                 _productoRepository
             );
-           
+         
         }
 
         [Test]

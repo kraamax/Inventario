@@ -43,20 +43,13 @@ namespace Inventario.Application.Test
         [Test]
         public void PuedoRegistrarLaSalidaDeProductoCompuesto()
         {
-            var ensalada=ProductoCompuestoMother.CrearProducto();
-            var gaseosa = new ProductoSimple("sadad", "gaseosa", 1, 100, 200);
-            var gaseosaInv=new ProductoSimple("sadad", "gaseosa", 5, 100, 200);
-            var ing = new List<Producto>();
-            ing.Add(ensalada);
-            ing.Add(gaseosa);
-            var ensaladaConG = new ProductoCompuesto("dasd", "ensaladaconG", 1, 2, ing, ensalada.ProductosEnInventario);
+            var ensaladaConG=ProductoCompuestoMother.CrearProductoCompuestoComplejo();
             _productoRepository.Add(ensaladaConG);
-            _productoRepository.AddRange(ensalada.ProductosEnInventario);
-            _productoRepository.Add(gaseosaInv);
+            _productoRepository.AddRange(ensaladaConG.ProductosEnInventario);
             _dbContext.SaveChanges();
             var request = new SalidaProductoRequest("Compuesto",ensaladaConG.Codigo,1);
             var resultado = _registrarSalidaProductoService.Handle(request);
-            Assert.AreEqual("se registro la salida de 1 ensaladaconG", resultado);
+            Assert.AreEqual("se registro la salida de 1 Ensalada Con Gaseosa", resultado);
         }
         [Test]
         public void PuedoRegistrarLaSalidaDeProductoSimple()

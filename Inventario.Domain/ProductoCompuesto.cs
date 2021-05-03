@@ -87,7 +87,6 @@ namespace Inventario.Domain
                         if (mensaje.Contains("Error"))
                             return mensaje;
                     }
-
                 }
             }
             return $"Salida registrada {Nombre}, cantidad {cantidad} precio {Precio*cantidad}";
