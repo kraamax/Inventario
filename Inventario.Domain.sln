@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Domain", "Invent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Domain.Test", "Inventario.Domain.Test\Inventario.Domain.Test.csproj", "{78C4F909-977A-47E1-85CB-A07E7B0549CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Infrastructure.Data", "Inventario.Infrastructure.Data\Inventario.Infrastructure.Data.csproj", "{9CBB54B5-F312-468C-8D88-75CEB5B207CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{78C4F909-977A-47E1-85CB-A07E7B0549CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C4F909-977A-47E1-85CB-A07E7B0549CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C4F909-977A-47E1-85CB-A07E7B0549CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBB54B5-F312-468C-8D88-75CEB5B207CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBB54B5-F312-468C-8D88-75CEB5B207CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBB54B5-F312-468C-8D88-75CEB5B207CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBB54B5-F312-468C-8D88-75CEB5B207CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

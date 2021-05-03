@@ -1,8 +1,9 @@
 ﻿using System;
+using Inventario.Domain.Base;
 
 namespace Inventario.Domain
 {
-    public abstract class Producto
+    public abstract class Producto:Entity<int>, IAggregateRoot
     {
         public Producto(string id, int cantidad, string nombre, decimal precio)
         {
