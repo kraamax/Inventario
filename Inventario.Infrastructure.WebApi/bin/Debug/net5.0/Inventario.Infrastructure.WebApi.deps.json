@@ -715,7 +715,8 @@
       "Inventario.Infrastructure.Data/1.0.0": {
         "dependencies": {
           "Inventario.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.5"
+          "Microsoft.EntityFrameworkCore": "5.0.5",
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.5"
         },
         "runtime": {
           "Inventario.Infrastructure.Data.dll": {}

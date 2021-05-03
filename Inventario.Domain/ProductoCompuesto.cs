@@ -10,12 +10,11 @@ namespace Inventario.Domain
 
         public List<Producto> Productos { get; private set; }
 
-        public ProductoCompuesto(string id, decimal precio, int cantidad, string nombre, List<Producto> productos) : base(id, cantidad, nombre, precio)
+        public ProductoCompuesto(string codigo, string nombre, int cantidad,  decimal precio, List<Producto> productos) : base(codigo, nombre, cantidad,  precio)
         {
             Productos = productos;
             Costo = CalcularCosto();
         }
-
 
         public List<ProductoSimple> Descomponer()
         {

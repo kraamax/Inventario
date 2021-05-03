@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Inventario.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Inventario.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Inventario.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Inventario.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Inventario.Domain/Inventario.Domain.csproj",
+      "msbuildProject": "../Inventario.Domain/Inventario.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Inventario.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Sebastian\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Domain\\Inventario.Domain.csproj": {
+              "projectPath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Domain\\Inventario.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

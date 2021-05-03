@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Inventario.Application/1.0.0": {
+        "dependencies": {
+          "Inventario.Domain": "1.0.0"
+        },
         "runtime": {
           "Inventario.Application.dll": {}
+        }
+      },
+      "Inventario.Domain/1.0.0": {
+        "runtime": {
+          "Inventario.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Inventario.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Inventario.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
