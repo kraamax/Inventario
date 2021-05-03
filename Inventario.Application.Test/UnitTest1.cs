@@ -33,7 +33,7 @@ namespace Inventario.Application.Test
         [Test]
         public void PuedoRegistrarEntradaDeUnProducto()
         {
-            var producto = new ProductoRequest("123a", "lechuga", 1, 2,1 );
+            var producto = new ProductoRequest(null,"123a", "lechuga", 1, 2,1 );
             var resultado = _registrarEntadaProductoService.Handle(producto);
             Assert.AreEqual("Se registro la entrada del producto Lechuga con una cantidad de 1", resultado);
         }
