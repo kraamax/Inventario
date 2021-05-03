@@ -1291,28 +1291,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sebastian\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Users\\JOHAN\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Infrastructure.WebApi\\Inventario.Infrastructure.WebApi.csproj",
+      "projectUniqueName": "C:\\DDP\\Parcial2\\Inventario\\Inventario.Infrastructure.WebApi\\Inventario.Infrastructure.WebApi.csproj",
       "projectName": "Inventario.Infrastructure.WebApi",
-      "projectPath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Infrastructure.WebApi\\Inventario.Infrastructure.WebApi.csproj",
-      "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Infrastructure.WebApi\\obj\\",
+      "projectPath": "C:\\DDP\\Parcial2\\Inventario\\Inventario.Infrastructure.WebApi\\Inventario.Infrastructure.WebApi.csproj",
+      "packagesPath": "C:\\Users\\JOHAN\\.nuget\\packages\\",
+      "outputPath": "C:\\DDP\\Parcial2\\Inventario\\Inventario.Infrastructure.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JOHAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1325,8 +1322,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Infrastructure.Data\\Inventario.Infrastructure.Data.csproj": {
-              "projectPath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Infrastructure.Data\\Inventario.Infrastructure.Data.csproj"
+            "C:\\DDP\\Parcial2\\Inventario\\Inventario.Infrastructure.Data\\Inventario.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\DDP\\Parcial2\\Inventario\\Inventario.Infrastructure.Data\\Inventario.Infrastructure.Data.csproj"
             }
           }
         }
