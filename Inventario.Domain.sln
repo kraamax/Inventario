@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Domain", "Inventario.Domain\Inventario.Domain.csproj", "{06114F5A-7499-4C28-8A7C-9084B7CADF3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario.Domain", "Inventario.Domain\Inventario.Domain.csproj", "{06114F5A-7499-4C28-8A7C-9084B7CADF3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Domain.Test", "Inventario.Domain.Test\Inventario.Domain.Test.csproj", "{78C4F909-977A-47E1-85CB-A07E7B0549CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario.Domain.Test", "Inventario.Domain.Test\Inventario.Domain.Test.csproj", "{78C4F909-977A-47E1-85CB-A07E7B0549CC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario.Infrastructure.Data", "Inventario.Infrastructure.Data\Inventario.Infrastructure.Data.csproj", "{9CBB54B5-F312-468C-8D88-75CEB5B207CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Infrastructure.WebApi", "Inventario.Infrastructure.WebApi\Inventario.Infrastructure.WebApi.csproj", "{ED73D6EC-B3EA-4F2D-A4AE-F20BAEC92393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario.Infrastructure.WebApi", "Inventario.Infrastructure.WebApi\Inventario.Infrastructure.WebApi.csproj", "{ED73D6EC-B3EA-4F2D-A4AE-F20BAEC92393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Application", "Inventario.Application\Inventario.Application.csproj", "{443A4EB9-CABC-4A39-94F1-D9C8ABB05A63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario.Application", "Inventario.Application\Inventario.Application.csproj", "{443A4EB9-CABC-4A39-94F1-D9C8ABB05A63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Application.Test", "Inventario.Application.Test\Inventario.Application.Test.csproj", "{ED278460-2780-4D5E-9CBD-37A42E67885A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario.Application.Test", "Inventario.Application.Test\Inventario.Application.Test.csproj", "{ED278460-2780-4D5E-9CBD-37A42E67885A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Infrastructure.Systems", "Inventario.Infrastructure.Systems\Inventario.Infrastructure.Systems.csproj", "{93BCB11C-217D-4399-8344-C3334AA1C05E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{ED278460-2780-4D5E-9CBD-37A42E67885A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED278460-2780-4D5E-9CBD-37A42E67885A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED278460-2780-4D5E-9CBD-37A42E67885A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93BCB11C-217D-4399-8344-C3334AA1C05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93BCB11C-217D-4399-8344-C3334AA1C05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93BCB11C-217D-4399-8344-C3334AA1C05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93BCB11C-217D-4399-8344-C3334AA1C05E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

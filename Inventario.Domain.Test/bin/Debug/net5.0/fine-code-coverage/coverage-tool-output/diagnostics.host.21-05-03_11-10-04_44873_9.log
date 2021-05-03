@@ -1,0 +1,208 @@
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.482, 157054673801, testhost.dll, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 51644],[--endpoint, 127.0.0.1:051644],[--role, client],[--parentprocessid, 15152],[--diag, C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\coverage-tool-output\diagnostics.host.21-05-03_11-10-04_44873_9.log],[--tracelevel, 4],[--datacollectionport, 51643],[--telemetryoptedin, false]
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.495, 157054774326, testhost.dll, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '15152'
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.535, 157055177231, testhost.dll, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:051644'
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.595, 157055779232, testhost.dll, SocketClient.Start: connecting to server endpoint: 127.0.0.1:051644
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.617, 157055992493, testhost.dll, DefaultEngineInvoker.ConnectToDatacollector: Connecting to datacollector, port: 51643
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:05.622, 157056046628, testhost.dll, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:051644
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.628, 157056107052, testhost.dll, Trying to connect to server on socket : 127.0.0.1:51643 
+TpTrace Verbose: 0 : 14816, 1, 2021/05/03, 11:10:05.629, 157056115507, testhost.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.632, 157056147288, testhost.dll, Connected to the server successfully 
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.632, 157056148864, testhost.dll, Using the buffer size of 16384 bytes
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:05.635, 157056171672, testhost.dll, Connected to server, and starting MessageLoopAsync
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:05.639, 157056218804, testhost.dll, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Information: 0 : 14816, 10, 2021/05/03, 11:10:05.644, 157056268896, testhost.dll, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:05.648, 157056307469, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:06.652, 157066345421, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:07.666, 157076489556, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:08.405, 157083879366, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:08.751, 157087335145, testhost.dll, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 5
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:08.951, 157089338175, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Registrando diagnóstico de TestHost en el archivo: C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output\\diagnostics.host.21-05-03_11-10-04_44873_9.log"}}
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:08.952, 157089344712, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:08.952, 157089347370, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:08.966, 157089482672, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\NUnit3.TestAdapter.dll"
+]
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:08.966, 157089486080, testhost.dll, Execution Session Initialize.
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:08.994, 157089768891, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:08.995, 157089770896, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.000, 157089829385, testhost.dll, TestExecutorService: Loading the extensions
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.006, 157089884765, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:09.007, 157089896346, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <ResultsDirectory>C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n    <TargetPlatform>X64</TargetPlatform>\r\n    <TargetFrameworkVersion>.NETCoreApp,Version=v5.0</TargetFrameworkVersion>\r\n    <DesignMode>False</DesignMode>\r\n    <CollectSourceInformation>False</CollectSourceInformation>\r\n  </RunConfiguration>\r\n  <LoggerRunSettings>\r\n    <Loggers>\r\n      <Logger friendlyName=\"blame\" enabled=\"True\" />\r\n      <Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\5.0.201\\vstest.console.dll\" enabled=\"True\" />\r\n    </Loggers>\r\n  </LoggerRunSettings>\r\n  <DataCollectionRunSettings>\r\n    <DataCollectors>\r\n      <DataCollector friendlyName=\"blame\" enabled=\"True\">\r\n        <Configuration>\r\n          <ResultsDirectory>C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n        </Configuration>\r\n      </DataCollector>\r\n    </DataCollectors>\r\n  </DataCollectionRunSettings>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.009, 157089912026, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.010, 157089920470, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.010, 157089922739, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:09.010, 157089928910, testhost.dll, Execution started.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.016, 157089984471, testhost.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.019, 157090012089, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.019, 157090014974, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.019, 157090015914, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.019, 157090016709, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.019, 157090018131, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.023, 157090052368, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.038, 157090206127, testhost.dll, AssemblyResolver.OnResolve: NUnit3.TestAdapter: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.046, 157090281702, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, from path: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.048, 157090309161, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.api: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.054, 157090362514, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.api, from path: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\nunit.engine.api.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.065, 157090470360, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.067, 157090498673, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.068, 157090500991, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.068, 157090503305, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.068, 157090505576, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.089, 157090710854, testhost.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.093, 157090751035, testhost.dll, TestExecutorExtensionManager: Loading executor NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.093, 157090752822, testhost.dll, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.095, 157090772475, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestSettingsProviderPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ISettingsProvider
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090779690, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090780943, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090781743, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090785653, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090786780, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090787566, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090788335, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.096, 157090789202, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.097, 157090790337, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.098, 157090802491, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.099, 157090809873, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.099, 157090811542, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.099, 157090812660, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.099, 157090814380, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.099, 157090815261, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.102, 157090841852, testhost.dll, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.102, 157090843600, testhost.dll, TestExecutorService: Loaded the extensions
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:09.107, 157090897811, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.165, 157091474036, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.165, 157091477528, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources: Failed to load assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.346, 157093284083, testhost.dll, TestDiscoveryManager: Discovering tests from sources C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\Inventario.Domain.Test.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.353, 157093358744, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestDiscovererPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.354, 157093362259, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.354, 157093363516, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.354, 157093364340, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.354, 157093367646, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.354, 157093369219, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.355, 157093370103, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.355, 157093370988, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.355, 157093371723, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.355, 157093372508, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.355, 157093373733, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.360, 157093419758, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.360, 157093423894, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Failed to load assembly.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.361, 157093434387, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.361, 157093437634, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.363, 157093451255, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolved from cache.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.363, 157093452492, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.363, 157093453356, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.365, 157093469769, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.366, 157093479681, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.366, 157093480897, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolved from cache.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.366, 157093481863, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.366, 157093482602, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.368, 157093505986, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.368, 157093508098, testhost.dll, TestPluginCache: Discoverers are 'NUnit.VisualStudio.TestAdapter.NUnit3TestDiscoverer, NUnit3.TestAdapter, Version=3.16.1.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.368, 157093509029, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.369, 157093509961, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.369, 157093510668, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.390, 157093724949, testhost.dll, PEReaderHelper.GetAssemblyType: Determined assemblyType:'Managed' for source: 'C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\Inventario.Domain.Test.dll'
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.403, 157093853890, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.405, 157093871843, testhost.dll, AssemblyResolver.OnResolve: nunit.engine: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.406, 157093888507, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine, from path: C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\nunit.engine.dll
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.437, 157094194078, testhost.dll, NUnit Adapter 3.16.1.0: Test execution started
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.437, 157094197016, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.16.1.0: Test execution started"}}
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.474, 157094562152, testhost.dll, Running all tests in C:\DDP\Parcial2\Inventario\Inventario.Domain.Test\bin\Debug\net5.0\fine-code-coverage\build-output\Inventario.Domain.Test.dll
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.474, 157094565094, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Running all tests in C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll"}}
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.571, 157095530639, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Resolving assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.571, 157095535171, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Failed to load assembly.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:09.985, 157099675427, testhost.dll,    NUnit3TestExecutor converted 6 of 6 NUnit test cases
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:09.985, 157099679021, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"   NUnit3TestExecutor converted 6 of 6 NUnit test cases"}}
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:10.110, 157100923089, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.131, 157101129885, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Inventario.Domain.Test.Tests.ElCostoDeLosProductosCorrespondeAlCostodeSusIngredientes.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.242, 157102240965, testhost.dll, TestExecutionRecorder.RecordEnd: test: Inventario.Domain.Test.Tests.ElCostoDeLosProductosCorrespondeAlCostodeSusIngredientes execution completed.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.284, 157102662645, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Inventario.Domain.Test.Tests.ElCostoDeLosProductosCorrespondeAlCostodeSusIngredientes.
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.294, 157102766758, testhost.dll, InProgressTests is null
+TpTrace Information: 0 : 14816, 12, 2021/05/03, 11:10:10.298, 157102808986, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources: Resolving assembly.
+TpTrace Information: 0 : 14816, 12, 2021/05/03, 11:10:10.300, 157102821645, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources: Failed to load assembly.
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.326, 157103083871, testhost.dll, TestRunCache: No test found corresponding to testResult 'ElCostoDeLosProductosCorrespondeAlCostodeSusIngredientes  Correctas
+  Mensajes de prueba:
+  StdOutMsgs:
+1000
+1000
+1000
+1000
+0
+1300
+1000
+1000
+3300
+1300
+' in inProgress list.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.326, 157103087387, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Inventario.Domain.Test.Tests.NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.329, 157103113588, testhost.dll, TestExecutionRecorder.RecordEnd: test: Inventario.Domain.Test.Tests.NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero execution completed.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.334, 157103163016, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Inventario.Domain.Test.Tests.NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero.
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.334, 157103165057, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.334, 157103166060, testhost.dll, TestRunCache: No test found corresponding to testResult 'NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero  Correctas' in inProgress list.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.334, 157103168099, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Inventario.Domain.Test.Tests.NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.336, 157103189166, testhost.dll, TestExecutionRecorder.RecordEnd: test: Inventario.Domain.Test.Tests.NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero execution completed.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.338, 157103207030, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Inventario.Domain.Test.Tests.NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero.
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.338, 157103208620, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.339, 157103209557, testhost.dll, TestRunCache: No test found corresponding to testResult 'NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero  Correctas' in inProgress list.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.339, 157103211577, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Inventario.Domain.Test.Tests.PuedoSumarCantidadAUnProducto.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.343, 157103253968, testhost.dll, TestExecutionRecorder.RecordEnd: test: Inventario.Domain.Test.Tests.PuedoSumarCantidadAUnProducto execution completed.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.345, 157103274658, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Inventario.Domain.Test.Tests.PuedoSumarCantidadAUnProducto.
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.345, 157103276596, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.345, 157103277615, testhost.dll, TestRunCache: No test found corresponding to testResult 'PuedoSumarCantidadAUnProducto  Correctas' in inProgress list.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.346, 157103279676, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Inventario.Domain.Test.Tests.TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.348, 157103303755, testhost.dll, TestExecutionRecorder.RecordEnd: test: Inventario.Domain.Test.Tests.TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida execution completed.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.350, 157103329122, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Inventario.Domain.Test.Tests.TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida.
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.351, 157103330970, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.351, 157103331938, testhost.dll, TestRunCache: No test found corresponding to testResult 'TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida  Correctas' in inProgress list.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.351, 157103334335, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: Inventario.Domain.Test.Tests.TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.353, 157103357567, testhost.dll, TestExecutionRecorder.RecordEnd: test: Inventario.Domain.Test.Tests.TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto execution completed.
+TpTrace Verbose: 0 : 14816, 12, 2021/05/03, 11:10:10.355, 157103376699, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: Inventario.Domain.Test.Tests.TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto.
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.355, 157103378648, testhost.dll, InProgressTests is null
+TpTrace Warning: 0 : 14816, 12, 2021/05/03, 11:10:10.356, 157103379684, testhost.dll, TestRunCache: No test found corresponding to testResult 'TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto  Correctas
+  Mensajes de prueba:
+  StdOutMsgs:
+1000
+1000
+1000
+1000
+0
+1000
+' in inProgress list.
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:10.375, 157103572974, testhost.dll, NUnit Adapter 3.16.1.0: Test execution complete
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:10.375, 157103575992, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.16.1.0: Test execution complete"}}
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:10.394, 157103760128, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 14816, 5, 2021/05/03, 11:10:10.404, 157103860246, testhost.dll, Sending test run complete
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:10.526, 157105089062, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":6,"Stats":{"Passed":6}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:00.9976904","Metrics":{}},"LastRunTests":{"NewTestResults":[{"TestCase":{"Id":"16d7651c-ab28-a896-2ab7-afd7d683331f","FullyQualifiedName":"Inventario.Domain.Test.Tests.ElCostoDeLosProductosCorrespondeAlCostodeSusIngredientes","DisplayName":"ElCostoDeLosProductosCorrespondeAlCostodeSusIngredientes","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"ElCostoDeLosProductosCorrespondeAlCostodeSusIngredientes","Messages":[{"Category":"StdOutMsgs","Text":"1000\r\n1000\r\n1000\r\n1000\r\n0\r\n1300\r\n1000\r\n1000\r\n3300\r\n1300\r\n"}],"ComputerName":"DESKTOP-R16JDF0","Duration":"00:00:00.0736420","StartTime":"2021-05-03T16:10:10+00:00","EndTime":"2021-05-03T16:10:10+00:00","Properties":[]},{"TestCase":{"Id":"3bf0ec72-ada8-ed79-ea20-2d64d1e0f5c5","FullyQualifiedName":"Inventario.Domain.Test.Tests.NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero","DisplayName":"NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero","Messages":[],"ComputerName":"DESKTOP-R16JDF0","Duration":"00:00:00.0084410","StartTime":"2021-05-03T16:10:10+00:00","EndTime":"2021-05-03T16:10:10+00:00","Properties":[]},{"TestCase":{"Id":"d072c54a-6d65-9185-ddec-25f932522251","FullyQualifiedName":"Inventario.Domain.Test.Tests.NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero","DisplayName":"NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero","Messages":[],"ComputerName":"DESKTOP-R16JDF0","Duration":"00:00:00.0008220","StartTime":"2021-05-03T16:10:10+00:00","EndTime":"2021-05-03T16:10:10+00:00","Properties":[]},{"TestCase":{"Id":"42033c16-b929-c360-733d-4fd3c2966488","FullyQualifiedName":"Inventario.Domain.Test.Tests.PuedoSumarCantidadAUnProducto","DisplayName":"PuedoSumarCantidadAUnProducto","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"PuedoSumarCantidadAUnProducto","Messages":[],"ComputerName":"DESKTOP-R16JDF0","Duration":"00:00:00.0006330","StartTime":"2021-05-03T16:10:10+00:00","EndTime":"2021-05-03T16:10:10+00:00","Properties":[]},{"TestCase":{"Id":"84818155-09a4-ef9b-5d0b-4e2c7b9f9271","FullyQualifiedName":"Inventario.Domain.Test.Tests.TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida","DisplayName":"TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida","Messages":[],"ComputerName":"DESKTOP-R16JDF0","Duration":"00:00:00.0051100","StartTime":"2021-05-03T16:10:10+00:00","EndTime":"2021-05-03T16:10:10+00:00","Properties":[]},{"TestCase":{"Id":"c90c0958-e658-3be1-214c-f6b3266a39ec","FullyQualifiedName":"Inventario.Domain.Test.Tests.TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto","DisplayName":"TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\DDP\\Parcial2\\Inventario\\Inventario.Domain.Test\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Inventario.Domain.Test.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto","Messages":[{"Category":"StdOutMsgs","Text":"1000\r\n1000\r\n1000\r\n1000\r\n0\r\n1000\r\n"}],"ComputerName":"DESKTOP-R16JDF0","Duration":"00:00:00.0018950","StartTime":"2021-05-03T16:10:10+00:00","EndTime":"2021-05-03T16:10:10+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":6,"Stats":{"Passed":6}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://nunit3testexecutor/"]}}
+TpTrace Verbose: 0 : 14816, 5, 2021/05/03, 11:10:10.528, 157105101837, testhost.dll, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:10.535, 157105170457, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:10.535, 157105173463, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:10.535, 157105174456, testhost.dll, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:10.536, 157105182545, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:051644
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:10.536, 157105184085, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:10.536, 157105187275, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:10.536, 157105188450, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 14816, 4, 2021/05/03, 11:10:10.537, 157105193757, testhost.dll, SocketClient.PrivateStop: Stop communication from server endpoint: 127.0.0.1:051644, error:
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:10.538, 157105209451, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:10.539, 157105210512, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:10.539, 157105212108, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:051644
+TpTrace Verbose: 0 : 14816, 4, 2021/05/03, 11:10:10.539, 157105212162, testhost.dll, TcpClientExtensions.MessageLoopAsync: exiting MessageLoopAsync remoteEndPoint: [::ffff:127.0.0.1]:51644 localEndPoint: [::ffff:127.0.0.1]:51645
+TpTrace Verbose: 0 : 14816, 1, 2021/05/03, 11:10:10.539, 157105212986, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 14816, 1, 2021/05/03, 11:10:10.539, 157105216518, testhost.dll, Testhost process exiting.
