@@ -10,3 +10,15 @@ C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\ne
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\net5.0\ref\Inventario.Domain.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.pdb
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.csprojAssemblyReference.cache
+C:\DDP\Parcial2\Inventario\Inventario.Domain\bin\Debug\net5.0\Inventario.Domain.deps.json
+C:\DDP\Parcial2\Inventario\Inventario.Domain\bin\Debug\net5.0\Inventario.Domain.dll
+C:\DDP\Parcial2\Inventario\Inventario.Domain\bin\Debug\net5.0\ref\Inventario.Domain.dll
+C:\DDP\Parcial2\Inventario\Inventario.Domain\bin\Debug\net5.0\Inventario.Domain.pdb
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.csprojAssemblyReference.cache
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.AssemblyInfoInputs.cache
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.AssemblyInfo.cs
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.csproj.CoreCompileInputs.cache
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.dll
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\ref\Inventario.Domain.dll
+C:\DDP\Parcial2\Inventario\Inventario.Domain\obj\Debug\net5.0\Inventario.Domain.pdb
