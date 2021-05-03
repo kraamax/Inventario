@@ -1,4 +1,4 @@
-/*using Inventario.Domain;
+using Inventario.Domain;
 using Inventario.Domain.Contracts;
 using Inventario.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -39,4 +39,4 @@ namespace Inventario.Application.Test
             Assert.AreEqual("La cantidad del producto lechuga es 4", resultado);
         }
     }
-}*/
+}

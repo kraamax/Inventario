@@ -1,4 +1,4 @@
-﻿/*using Inventario.Domain;
+﻿using Inventario.Domain;
 using Inventario.Domain.Contracts;
 using Inventario.Infrastructure.Data.Base;
 
@@ -10,4 +10,4 @@ namespace Inventario.Infrastructure.Data
         {
         }
     }
-}*/
+}
