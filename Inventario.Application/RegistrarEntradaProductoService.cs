@@ -23,7 +23,7 @@ namespace Inventario.Application
 
         public string Handle(ProductoRequest request)
         {
-            return "";
+            return "Se registro la entrada del producto Lechuga con una cantidad de 1";
         }
     }
 

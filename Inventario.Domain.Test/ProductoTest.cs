@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Inventario.Domain.Test
 {
-    public class Tests
+    public class ProductoTests
     {
         [SetUp]
         public void Setup()
@@ -21,7 +21,7 @@ namespace Inventario.Domain.Test
         [Test]
         public void NoPuedeRegitrarEntradaDeProductosConCantidadMenorOIgualACero()
         {
-            var producto = new ProductoSimple("123a", 1500, 1000, 0, "lechuga");
+            var producto = new ProductoSimple("123a", "lechuga", 1, 1000,1500 );
             var resultado = producto.RegistrarEntradaProducto(0);
             Assert.AreEqual("La cantidad de la entrada de debe ser mayor a 0", resultado);
         }
@@ -36,7 +36,8 @@ namespace Inventario.Domain.Test
         [Test]
         public void PuedoSumarCantidadAUnProducto()
         {
-            var producto = new ProductoSimple("123a", 1500, 1000, 2, "lechuga");
+            var producto = new ProductoSimple("123a", "lechuga", 2, 1000,1500 );
+
             var resultado = producto.RegistrarEntradaProducto(2);
             Assert.AreEqual("La cantidad del producto lechuga es 4", resultado);
         }
@@ -50,7 +51,7 @@ namespace Inventario.Domain.Test
         [Test]
         public void NoPuedoRegistrarUnaSalidaDeProductoConCantidadMenorOIgualACero()
         {
-            var producto = new ProductoSimple("123a", 1500, 1000, 4, "lechuga");
+            var producto = new ProductoSimple("123a", "lechuga", 1, 1000,1500 );
             var resultado = producto.RegistrarSalidaProducto(0);
             Assert.AreEqual("La cantidad de la salida de debe ser mayor a 0", resultado);
         }
@@ -64,7 +65,7 @@ namespace Inventario.Domain.Test
         [Test]
         public void TengoQueDisminuirLaCantidadDelProductoExistenteCuandoRegistroLaSalida()
         {
-            var producto = new ProductoSimple("123a", 1500, 1000, 4, "lechuga");
+            var producto = new ProductoSimple("123a", "lechuga", 4, 1000,1500 );
             var resultado = producto.RegistrarSalidaProducto(2);
             Assert.AreEqual("La cantidad del producto lechuga es 2", resultado);
         }
@@ -83,16 +84,16 @@ namespace Inventario.Domain.Test
         public void TengoQueDismuirLaCantidadDeIngredientesDeCadaProducto()
         {
             List<Producto> IngredientesEnsalada = new List<Producto>();
-            var tomate = new ProductoSimple("123a", 1500, 1000, 1, "tomate");
-            var lechuga = new ProductoSimple("123b", 1500, 1000, 1, "lechuga");
-            var gaseosa = new ProductoSimple("123c", 1500, 1000, 1, "Gaseosa");
+            var tomate = new ProductoSimple("123a", "tomate", 1, 1300,1500 );
+            var lechuga = new ProductoSimple("123b", "lechuga", 1, 1000, 1500);
+            var gaseosa = new ProductoSimple("123c", "Gaseosa", 1, 1000, 1500);
             IngredientesEnsalada.Add(tomate);
             IngredientesEnsalada.Add(lechuga);
-            var ensalada = new ProductoCompuesto("123d", 4000, 1, "Ensalada", IngredientesEnsalada);
+            var ensalada = new ProductoCompuesto("123d", "Ensalada", 1,4000 , IngredientesEnsalada);
             List<Producto> ensaladaConGaseosaComposicicion = new List<Producto>();
             ensaladaConGaseosaComposicicion.Add(ensalada);
             ensaladaConGaseosaComposicicion.Add(gaseosa);
-            var ensaladaConGaseosaCombo = new ProductoCompuesto("123d", 4000, 1, "EnsaladaConGaseosa", ensaladaConGaseosaComposicicion);
+            var ensaladaConGaseosaCombo = new ProductoCompuesto("123d", "EnsaladaConGaseosa", 1,4000 , ensaladaConGaseosaComposicicion);
             //inventario.RegistrarSalidaProductoCompuesto(combo);
             var resultado = ensaladaConGaseosaCombo.RegistrarSalidaProducto(2);
             Assert.AreEqual("Salida registrada EnsaladaConGaseosa, cantidad 2 precio 8000", resultado);
@@ -103,16 +104,16 @@ namespace Inventario.Domain.Test
         {
 
             List<Producto> IngredientesEnsalada = new List<Producto>();
-            var tomate = new ProductoSimple("123a", 1500, 1000, 1, "tomate");
-            var lechuga = new ProductoSimple("123b", 1500, 1000, 1, "lechuga");
-            var gaseosa = new ProductoSimple("123c", 1500, 1300, 1, "Gaseosa");
+            var tomate = new ProductoSimple("123a", "tomate", 1, 1300,1500 );
+            var lechuga = new ProductoSimple("123b", "lechuga", 1, 1000, 1500);
+            var gaseosa = new ProductoSimple("123c", "Gaseosa", 1, 1000, 1500);
             IngredientesEnsalada.Add(tomate);
             IngredientesEnsalada.Add(lechuga);
-            var ensalada = new ProductoCompuesto("123d", 4000, 1, "Ensalada", IngredientesEnsalada);
+            var ensalada = new ProductoCompuesto("123d", "Ensalada", 1,4000 , IngredientesEnsalada);
             List<Producto> ensaladaConGaseosaComposicicion = new List<Producto>();
             ensaladaConGaseosaComposicicion.Add(ensalada);
             ensaladaConGaseosaComposicicion.Add(gaseosa);
-            var ensaladaConGaseosaCombo = new ProductoCompuesto("123d", 4000, 1, "EnsaladaConGaseosa", ensaladaConGaseosaComposicicion);
+            var ensaladaConGaseosaCombo = new ProductoCompuesto("123d", "EnsaladaConGaseosa", 1,4000 , ensaladaConGaseosaComposicicion);
             var resultado = "El costo es: $" + ensaladaConGaseosaCombo.CalcularCosto();
             Assert.AreEqual("El costo es: $3300", resultado);
         }

@@ -7,12 +7,10 @@ namespace Inventario.Domain
 {
     public class ProductoSimple : Producto
     {
-        public ProductoSimple(string id, decimal precio, decimal costo, int cantidad, string nombre) : base(id,  cantidad, nombre, precio)
+        public ProductoSimple(string codigo, string nombre, int cantidad, decimal costo, decimal precio) : base(codigo, nombre, cantidad, precio)
         {
             Costo = costo;
         }
-
-    
 
         public override string RegistrarEntradaProducto(int cantidad)
         {
