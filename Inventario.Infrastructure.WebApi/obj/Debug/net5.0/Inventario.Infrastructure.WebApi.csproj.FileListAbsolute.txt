@@ -134,3 +134,5 @@ C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebA
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\bin\Debug\net5.0\Inventario.Application.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.WebApi\bin\Debug\net5.0\Inventario.Application.pdb

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oLZRJjkYlOUjiJvIXj4t952BduY+z/JbC6W2KA5n8k+EipBv6QP0C5tcGDZiPRo9ftz3Q08S12pXSXm1wJ3BCQ==",
+  "dgSpecHash": "a7J6KeGI8T7287MjXZ1KiTLluaIHWdRQqhOsfUcePM6+/Ej5WJps/8EK4z9z9G0aCwoIgIy0hi+LeiJraofFBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sebastian\\source\\repos\\Inventario.Domain\\Inventario.Application.Test\\Inventario.Application.Test.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.5\\microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
+    "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.5\\microsoft.entityframeworkcore.inmemory.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.5\\microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.5\\microsoft.entityframeworkcore.sqlite.5.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.5\\microsoft.entityframeworkcore.sqlite.core.5.0.5.nupkg.sha512",
