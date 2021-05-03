@@ -13,3 +13,5 @@ C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Deb
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\Inventario.Domain.dll
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\Inventario.Domain.pdb
 C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\obj\Debug\net5.0\Inventario.Application.csproj.CopyComplete
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\Inventario.Infrastructure.Data.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Application\bin\Debug\net5.0\Inventario.Infrastructure.Data.pdb
