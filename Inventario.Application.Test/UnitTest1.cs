@@ -16,7 +16,7 @@ namespace Inventario.Application.Test
         public void Setup()
         {
             var optionsSqlite = new DbContextOptionsBuilder<InventarioContext>()
-                .UseSqlite(@"Data Source=InventarioBaseTest.db")
+                .UseSqlite(@"Data Source=C:\\sqlite\\InventarioDBTest.db")
                 .Options;
 
             _dbContext = new InventarioContext(optionsSqlite);
@@ -31,11 +31,19 @@ namespace Inventario.Application.Test
         }
 
         [Test]
-        public void PuedoRegistrarEntradaDeUnProducto()
+        public void PuedoRegistrarEntradaDeUnProductonNuevo()
         {
-            var producto = new ProductoRequest(null,"123a", "lechuga", 1, 2,1 );
+            var producto = new ProductoRequest(null,"123a", "Lechuga", 1, 2,1 );
             var resultado = _registrarEntadaProductoService.Handle(producto);
             Assert.AreEqual("Se registro la entrada del producto Lechuga con una cantidad de 1", resultado);
+        }
+        [Test]
+        public void PuedoRegistrarEntradaDeUnProductoExistente()
+        {
+            var producto = new ProductoRequest(null,"123a", "Lechuga", 1, 2,1 );
+            _registrarEntadaProductoService.Handle(producto);
+            var resultado = _registrarEntadaProductoService.Handle(producto);
+            Assert.AreEqual("La nueva cantidad del producto Lechuga es 2", resultado);
         }
     }
 }

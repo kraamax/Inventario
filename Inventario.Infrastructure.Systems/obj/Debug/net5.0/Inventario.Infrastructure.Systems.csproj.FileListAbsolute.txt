@@ -1,0 +1,15 @@
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\bin\Debug\net5.0\Inventario.Infrastructure.Systems.deps.json
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\bin\Debug\net5.0\Inventario.Infrastructure.Systems.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\bin\Debug\net5.0\ref\Inventario.Infrastructure.Systems.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\bin\Debug\net5.0\Inventario.Infrastructure.Systems.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\bin\Debug\net5.0\Inventario.Domain.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\bin\Debug\net5.0\Inventario.Domain.pdb
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.csprojAssemblyReference.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.AssemblyInfoInputs.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.AssemblyInfo.cs
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.csproj.CopyComplete
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\ref\Inventario.Infrastructure.Systems.dll
+C:\Users\Sebastian\source\repos\Inventario.Domain\Inventario.Infrastructure.Systems\obj\Debug\net5.0\Inventario.Infrastructure.Systems.pdb

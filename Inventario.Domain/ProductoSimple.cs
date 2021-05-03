@@ -18,7 +18,7 @@ namespace Inventario.Domain
                 return "La cantidad de la entrada de debe ser mayor a 0";
             }
             Cantidad = Cantidad + cantidad;
-            return $"La cantidad del producto {Nombre} es {Cantidad}";
+            return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
         }
 
         public override string RegistrarSalidaProducto(int cantidad)
@@ -28,7 +28,7 @@ namespace Inventario.Domain
                 return "La cantidad de la salida de debe ser mayor a 0";
             }
             Cantidad = Cantidad - cantidad;
-            return $"La cantidad del producto {Nombre} es {Cantidad}";
+            return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
         }
     }
 }

@@ -15,11 +15,13 @@ namespace Inventario.Infrastructure.Data
 
         }
 
-        public DbSet<ProductoSimple> ProductoSimples { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<ProductoSimple> ProductosSimples { get; set; }
+        public DbSet<ProductoCompuesto> ProductosCompuestos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ProductoSimple>().HasKey(c => c.Id);
+            modelBuilder.Entity<Producto>().HasKey(c => c.Id);
         }
     }
 }

@@ -10,6 +10,9 @@ namespace Inventario.Domain
 
         public List<Producto> Productos { get; private set; }
 
+        public ProductoCompuesto(string codigo, string nombre, int cantidad, decimal precio) : base(codigo, nombre, cantidad, precio)
+        {
+        }
         public ProductoCompuesto(string codigo, string nombre, int cantidad,  decimal precio, List<Producto> productos) : base(codigo, nombre, cantidad,  precio)
         {
             Productos = productos;
@@ -66,7 +69,7 @@ namespace Inventario.Domain
                 return "La cantidad de la entrada de debe ser mayor a 0";
             }
             Cantidad = Cantidad + cantidad;
-            return $"La cantidad del producto {Nombre} es {Cantidad}";
+            return $"La nueva cantidad del producto {Nombre} es {Cantidad}";
         }
 
         public override string RegistrarSalidaProducto(int cantidad)
