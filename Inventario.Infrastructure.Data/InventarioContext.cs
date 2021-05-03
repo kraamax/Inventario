@@ -8,10 +8,10 @@ using Inventario.Domain;
 
 namespace Inventario.Infrastructure.Data
 {
-    public class BancoContext: DbContextBase
+    public class InventarioContext: DbContextBase
     {
         
-        public BancoContext(DbContextOptions options) : base(options)
+        public InventarioContext(DbContextOptions options) : base(options)
         {
 
         }
