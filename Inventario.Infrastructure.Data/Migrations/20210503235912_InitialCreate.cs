@@ -18,23 +18,23 @@ namespace Inventario.Infrastructure.Data.Migrations
                     Costo = table.Column<decimal>(type: "TEXT", nullable: false),
                     Precio = table.Column<decimal>(type: "TEXT", nullable: false),
                     Discriminator = table.Column<string>(type: "TEXT", nullable: false),
-                    ProductoCompuestoId = table.Column<int>(type: "INTEGER", nullable: true)
+                    ProductoCompuestoId1 = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Productos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Productos_Productos_ProductoCompuestoId",
-                        column: x => x.ProductoCompuestoId,
+                        name: "FK_Productos_Productos_ProductoCompuestoId1",
+                        column: x => x.ProductoCompuestoId1,
                         principalTable: "Productos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Productos_ProductoCompuestoId",
+                name: "IX_Productos_ProductoCompuestoId1",
                 table: "Productos",
-                column: "ProductoCompuestoId");
+                column: "ProductoCompuestoId1");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

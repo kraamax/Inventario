@@ -34,6 +34,7 @@ namespace Inventario.Infrastructure.WebApi
 
             services.AddDbContext<InventarioContext>(opt => opt.UseSqlite(connectionString));
             services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddScoped<IUnitOfWork, UnitOfWork>(); //Crear Instancia por peticion
             services.AddScoped<IProductoRepository, ProductoRepository>(); //Crear Instancia por peticion
             services.AddScoped<IDbContext, InventarioContext>(); //Crear Instancia por peticion

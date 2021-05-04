@@ -13,7 +13,6 @@ namespace Inventario.Application.Test
     {
         private InventarioContext _dbContext;
         private RegistrarSalidaProductoService _registrarSalidaProductoService;
-        private RegistrarSalidaProductoService2 _registrarSalidaProductoService2;
 
         private IProductoRepository _productoRepository;
 
@@ -34,10 +33,7 @@ namespace Inventario.Application.Test
                 new UnitOfWork(_dbContext),
                 _productoRepository
             );
-            _registrarSalidaProductoService2 = new RegistrarSalidaProductoService2(
-                new UnitOfWork(_dbContext),
-                _productoRepository
-            );
+          
         }
 
         [Test]

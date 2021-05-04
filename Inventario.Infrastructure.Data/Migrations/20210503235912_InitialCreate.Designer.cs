@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Inventario.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(InventarioContext))]
-    [Migration("20210503163642_InitialCreate")]
+    [Migration("20210503235912_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,12 +43,12 @@ namespace Inventario.Infrastructure.Data.Migrations
                     b.Property<decimal>("Precio")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("ProductoCompuestoId")
+                    b.Property<int?>("ProductoCompuestoId1")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductoCompuestoId");
+                    b.HasIndex("ProductoCompuestoId1");
 
                     b.ToTable("Productos");
 
@@ -72,13 +72,13 @@ namespace Inventario.Infrastructure.Data.Migrations
             modelBuilder.Entity("Inventario.Domain.Producto", b =>
                 {
                     b.HasOne("Inventario.Domain.ProductoCompuesto", null)
-                        .WithMany("Productos")
-                        .HasForeignKey("ProductoCompuestoId");
+                        .WithMany("Ingredientes")
+                        .HasForeignKey("ProductoCompuestoId1");
                 });
 
             modelBuilder.Entity("Inventario.Domain.ProductoCompuesto", b =>
                 {
-                    b.Navigation("Productos");
+                    b.Navigation("Ingredientes");
                 });
 #pragma warning restore 612, 618
         }

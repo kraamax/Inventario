@@ -49,13 +49,13 @@ namespace Inventario.Application
         }
     }
 
-    public record EntradaProductoRequest(List<Producto> Productos,string Codigo, string Nombre, int Cantidad, decimal Costo, decimal Precio);
+    public record EntradaProductoRequest(string Tipo,string Codigo, string Nombre, int Cantidad, decimal Costo, decimal Precio, List<Producto> Productos);
 
     public class TipoProducto
     {
         public static Producto CrearProducto(EntradaProductoRequest request)
         {
-            if (request.Productos == null)
+            if (request.Tipo.Equals("Simple"))
                 return new ProductoSimple(request.Codigo,request.Nombre,0,request.Costo,request.Precio);
             return new ProductoCompuesto(request.Codigo, request.Nombre, 0, 
                 request.Precio, request.Productos,null);
