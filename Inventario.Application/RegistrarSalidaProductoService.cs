@@ -61,7 +61,23 @@ namespace Inventario.Application
             foreach (var p in productoCompuesto.Ingredientes)
             {
                 var auxProductos = _productoRepository.FindBy(c => c.Codigo == p.Codigo);
-                var auxProducto = auxProductos.FirstOrDefault(x => x.ProductoCompuestoId == 0);
+                foreach (var s in auxProductos)
+                {
+                    Console.WriteLine($"nombre {s.Nombre} foregn {s.ProductoCompuestoId}");
+                }
+
+                Producto auxProducto;
+                if (p.GetType() == typeof(ProductoCompuesto))
+                {
+                    auxProducto = auxProductos.FirstOrDefault();
+                }
+                else
+                {
+                    auxProducto = auxProductos.FirstOrDefault(x => x.ProductoCompuestoId == null);
+
+                }
+                if (auxProducto == null)
+                    return "No se encontro el producto";
                 productosEnInventario.Add(auxProducto);
             }
             productoCompuesto.ProductosEnInventario = productosEnInventario;

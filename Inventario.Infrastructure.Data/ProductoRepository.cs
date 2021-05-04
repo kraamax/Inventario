@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Inventario.Domain;
 using Inventario.Domain.Contracts;
@@ -16,8 +17,9 @@ namespace Inventario.Infrastructure.Data
         public List<ProductoSimple> ConsultarProductoSimple()
         {
 
-            var productos = _db.Set<ProductoSimple>().ToList();
-            return productos.Where(x => x.ProductoCompuestoId == 0).ToList();
+            var productos = _db.Set<ProductoSimple>().Where(p=>p.ProductoCompuestoId==null).ToList();
+           // return productos.Where(x => x.ProductoCompuestoId == 0).ToList();
+           return productos;
         }
 
         public List<ProductoCompuesto> consultarProductoCompuestos()
@@ -25,7 +27,7 @@ namespace Inventario.Infrastructure.Data
             var productos = _db.Set<ProductoCompuesto>()
                 .Include(c=>c.Ingredientes)
                 .ToList();
-            return productos.Where(x => x.ProductoCompuestoId == 0).ToList();
+            return productos.Where(x => x.ProductoCompuestoId == null).ToList();
         }
 
         public ProductoCompuesto consultarProductoCompuesto(string codigo)

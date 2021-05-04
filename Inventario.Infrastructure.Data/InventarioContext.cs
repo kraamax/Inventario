@@ -21,8 +21,10 @@ namespace Inventario.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<Producto>().HasKey(c => c.Id);
             modelBuilder.Entity<ProductoCompuesto>().Ignore(c=>c.ProductosEnInventario);
+            
         }
     }
 }
